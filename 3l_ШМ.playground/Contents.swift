@@ -52,7 +52,7 @@ struct Car {
         print("\(self.actionToDo) did done by \(self.carBrand) \(self.year), Trunk capacity: \(self.trunkCapacity), Trunk filled: \(self.trunkFilled), Cargo: \(cargo)")
     // Проверяем поместиться ли груз в багажник либо значение груза не должно быть отрицательным и добавляем значение груза к уже имеющемуся значению
         if (trunkFilled + cargo >= 0) && (trunkFilled + cargo <= trunkCapacity) {
-                trunkFilled = trunkFilled + cargo
+                trunkFilled += cargo
                 cargo = 0
         } else {
             print("Invalid cargo value")
@@ -96,7 +96,7 @@ struct Truck {
         print("\(self.actionToDo) did done by \(self.carBrand) \(self.year), Trunk capacity: \(self.trunkCapacity), Trunk filled: \(self.trunkFilled), Cargo: \(cargo)")
         // Проверяем поместиться ли груз в багажник либо значение груза не должно быть отрицательным и добавляем значение груза к уже имеющемуся значению
         if (trunkFilled + cargo >= 0) && (trunkFilled + cargo <= trunkCapacity) {
-            trunkFilled = trunkFilled + cargo
+            trunkFilled += cargo
             cargo = 0
         } else {
             print("Invalid cargo value")
